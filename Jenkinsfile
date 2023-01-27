@@ -16,7 +16,7 @@ pipeline {
                 script {
                     def loginCommand = "aws ecr get-login-password --region ${awsRegion} | docker login --username AWS --password-stdin ${params.ecrRepository}"
                     sh loginCommand
-                    def buildimage = "docker build  -t ${dockerImage}:${dockerTag}.
+                    def buildimage = "docker build  -t ${dockerImage}:${dockerTag} ."
                     sh buildimage
                     def tagCommand = "docker tag ${params.dockerImage}:${params.dockerTag} ${params.ecrRepository}:${params.dockerTag}"
                     sh tagCommand
