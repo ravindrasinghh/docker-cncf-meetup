@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    options {
+        ansiColor('xterm')
+        buildDiscarder(logRotator(numToKeepStr: "10"))
+    }
     parameters {
         string(name: 'awsRegion', defaultValue: 'us-west-2', description: 'Region')
         string(name: 'taskDefinition', defaultValue: 'demo-taskdefination', description: 'The name of the task definition')
