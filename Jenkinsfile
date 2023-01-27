@@ -7,7 +7,7 @@ pipeline {
     parameters {
         string(name: 'awsRegion', defaultValue: 'us-west-2', description: 'Region')
         string(name: 'taskDefinition', defaultValue: 'demo-taskdefination', description: 'The name of the task definition')
-        string(name: 'service', defaultValue: 'demo-service', description: 'The name of the service')
+        string(name: 'service', defaultValue: 'demo-service-v2', description: 'The name of the service')
         string(name: 'cluster', defaultValue: 'docker-meetup-cluster', description: 'The name of the cluster')
         string(name: 'taskDefinitionFile', defaultValue: 'task-definition.json', description: 'The name of the task definition file')
         string(name: 'dockerImage', defaultValue: 'web', description: 'The name of the Docker image')
