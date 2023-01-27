@@ -22,9 +22,9 @@ pipeline {
                     sh loginCommand
                     def buildimage = "docker build  -t ${dockerImage}:${dockerTag} ."
                     sh buildimage
-                    def tagCommand = "docker tag ${params.dockerImage}:${params.dockerTag} ${params.ecrRepository}:${params.dockerTag}"
+                    def tagCommand = "docker tag ${params.dockerImage}:${params.dockerTag} ${params.ecrRepository}/${params.dockerImage}:${params.dockerTag}"
                     sh tagCommand
-                    def pushCommand = "docker push ${params.ecrRepository}:${params.dockerTag}"
+                    def pushCommand = "docker push ${params.ecrRepository}/${params.dockerImage}:${params.dockerTag}"
                     sh pushCommand
                 }
             }
