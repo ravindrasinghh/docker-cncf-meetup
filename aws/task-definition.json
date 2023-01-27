@@ -1,7 +1,7 @@
 {
     "containerDefinitions": [{
         "essential": true,
-        "image": "240633844458.dkr.ecr.us-west-2.amazonaws.com/nginx:latest",
+        "image": "240633844458.dkr.ecr.us-west-2.amazonaws.com/web:latest",
         "name": "nginx-container",
         "portMappings": [{
             "containerPort": 80,
@@ -10,9 +10,9 @@
         }]
     }],
     "cpu": "256",
-    "executionRoleArn": "ecsTaskExecutionRole",
+    "executionRoleArn": "docker-meetup-ecsTaskExecutionRole",
     "family": "nginx-container",
-    "taskRoleArn": "ecsTaskExecutionRole",
+    "taskRoleArn": "docker-meetup-ecsTaskExecutionRole",
     "memory": "256",
     "networkMode": "bridge"
 }
