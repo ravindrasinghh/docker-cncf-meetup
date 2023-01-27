@@ -7,6 +7,6 @@ Pipeline to create DB and USERS in Atlas Mongo
 - Commands to run build the code and run in the local machine
 ``` sh
 docker build -t web:latest .
-docker run -itd -p 80:8080 web:latest
+docker run -itd -p 80:80 web:latest
 curl localhost
 ```
