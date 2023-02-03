@@ -2,7 +2,7 @@
     "containerDefinitions": [{
         "essential": true,
         "image": "240633844458.dkr.ecr.us-west-2.amazonaws.com/web:latest",
-        "name": "nginx-container",
+        "name": "frontend-container",
         "portMappings": [{
             "containerPort": 80,
             "hostPort": 0,
