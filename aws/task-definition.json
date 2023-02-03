@@ -12,7 +12,7 @@
     "cpu": "256",
     "executionRoleArn": "non-prod-capstone-ecsTaskExecutionRole",
     "family": "frontend",
-    "taskRoleArn": "non-prod-capstone-p-ecsTaskExecutionRole",
+    "taskRoleArn": "non-prod-capstone-ecsTaskExecutionRole",
     "memory": "256",
     "networkMode": "bridge"
 }
