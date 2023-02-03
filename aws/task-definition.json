@@ -1,8 +1,8 @@
 {
     "containerDefinitions": [{
         "essential": true,
-        "image": "240633844458.dkr.ecr.us-west-2.amazonaws.com/web:latest",
-        "name": "frontend-container",
+        "image": "240633844458.dkr.ecr.ap-south-1.amazonaws.com/web:latest",
+        "name": "frontend",
         "portMappings": [{
             "containerPort": 80,
             "hostPort": 0,
@@ -10,9 +10,9 @@
         }]
     }],
     "cpu": "256",
-    "executionRoleArn": "docker-meetup-ecsTaskExecutionRole",
-    "family": "nginx-container",
-    "taskRoleArn": "docker-meetup-ecsTaskExecutionRole",
+    "executionRoleArn": "non-prod-capstone-ecsTaskExecutionRole",
+    "family": "frontend",
+    "taskRoleArn": "non-prod-capstone-p-ecsTaskExecutionRole",
     "memory": "256",
     "networkMode": "bridge"
 }
