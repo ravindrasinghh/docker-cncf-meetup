@@ -6,7 +6,7 @@ pipeline {
     parameters {
         string(name: 'awsRegion', defaultValue: 'ap-south-1', description: 'Region')
         string(name: 'taskDefinition', defaultValue: 'frontend', description: 'The name of the task definition')
-        string(name: 'service', defaultValue: 'frontend', description: 'The name of the service')
+        string(name: 'service', defaultValue: 'frontend-new', description: 'The name of the service')
         string(name: 'cluster', defaultValue: 'ecs-demo', description: 'The name of the cluster')
         string(name: 'taskDefinitionFile', defaultValue: 'task-definition.json', description: 'The name of the task definition file')
         string(name: 'dockerImage', defaultValue: 'web', description: 'The name of the Docker image')
