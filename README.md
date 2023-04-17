@@ -1,9 +1,6 @@
 # docker-cncf-meetup
 Repoitory contains the code of demo reference
 
-# Commands to build the docker iamge
-Pipeline to create DB and USERS in Atlas Mongo
-
 - Commands to build the code and run in the local machine
 ``` sh
 docker build -t web:latest .
